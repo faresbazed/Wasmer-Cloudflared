@@ -1,19 +1,23 @@
 [package]
-name = "your-username/my-wasmer-app"
+name = "your-username/vless-wasmer-node"
 version = "0.1.0"
-description = "Web server deployed directly on Wasmer Edge"
+description = "Pure JS VLESS over WebSocket for Wasmer Edge"
 
 [dependencies]
-"wasmer/winterjs" = "1.3.0"
+"wasmer/node" = "20.11.0"
 
 [fs]
-"/src" = "."
+"/app" = "."
 
 [[command]]
-name = "script"
-module = "wasmer/winterjs:winterjs"
+name = "run"
+module = "wasmer/node:node"
 runner = "https://webc.org/runner/wasi"
 
 [command.annotations.wasi]
-main-args = ["/src/index.js"]
-env = ["PORT=8080"]
+main-args = ["/app/index.js"]
+env = [
+  "PORT=8080",
+  "UUID=d342d11e-d424-4583-b36e-524ab1f0afa4",
+  "WSPATH=/vless"
+]
