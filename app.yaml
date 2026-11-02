@@ -1,4 +1,4 @@
 ---
 kind: wasmer.io/App.v0
-name: my-wasmer-app
+name: vless-wasmer-node
 package: .
