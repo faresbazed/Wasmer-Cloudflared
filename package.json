@@ -1,9 +1,12 @@
 {
-  "name": "wasmer-edge-server",
+  "name": "vless-ws-wasmer",
   "version": "1.0.0",
-  "description": "Direct Wasmer Edge deployment without cloudflared wrapper",
+  "description": "Pure Node.js VLESS WebSocket Server",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
   }
 }
