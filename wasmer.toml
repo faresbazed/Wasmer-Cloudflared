@@ -1,7 +1,7 @@
 [package]
-name = "your-username/vless-wasmer-node"
+name = "your-wasmer-username/my-vless-app"
 version = "0.1.0"
-description = "Pure JS VLESS over WebSocket for Wasmer Edge"
+description = "Zero-dependency VLESS WS Server"
 
 [dependencies]
 "wasmer/node" = "20.11.0"
